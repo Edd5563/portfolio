@@ -1,13 +1,9 @@
 <!DOCTYPE HTML>
-<!--
-	Full Motion by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
 
 <head>
-    <title></title>
+    <title>Edwin Rivera Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -15,75 +11,48 @@
 
 <body id="top">
 
-    <!-- Banner -->
-    <!--
-				To use a video as your background, set data-video to the name of your video without
-				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
-				formats to work correctly.
-			-->
-    <section id="banner">
-        <div class="inner">
-            <header>
-                <h1>Edwin Rivera</h1>
-                <p>A self-taught passionate developer in FLorida <br />
-                    Persuing a oppourtunity in web development</p>
-                    <a class="button style3" href="/" class="more">Home</a>
-                    <a class="button style2" href="/" class="more">Resume</a>
-            </header>
-        </div>
-    </section>
+        <section id="banner" data-video="images/banner">
+			<div class="inner">
+				<header>
+					<h1>Edwin Rivera</h1>
+					<p>A self-taught passionate developer in Florida <br />
+					Persuing a oppourtunity in Full-stack development usually with Node.js</p>
+					<a class="button style3" href="/" class="more">Home</a>
+                    <a class="button style2" href="/resume" class="more">Resume</a>
+				</header>
+				<br>
+				<a href="#main" class="more"></a>
+			</div>
+		</section>
 
-    <!-- Main -->
     <div id="main">
         <div class="inner">
-
-
-    <div class="box">
-        <div class="inner">
-            <h3>Leave me a message</h3>
-            <p>Dont worry, I wont share any of your contact information with anyone.</p>
-            <form method="POST" action="contact">
-                <input type="text" name="name" placeholder="John Smith">
-                <input type="text" name="company" placeholder="J & R Software Development">
-                <input type="email" name="email" id="" placeholder="jsmith@jrdevgroup.com">
-                <textarea name="message" id="" cols="15" rows="5" placeholder="..."></textarea>
-                <input type="submit" value="Send" class="submitBtn">
-            </form>
-            
-            
+            <div class="box">
+                <div class="inner">
+                    <h3>Leave me a message</h3>
+                    <p>Dont worry, I wont share any of your contact information with anyone.</p>
+                    <form method="POST" action="contact">
+                        <input type="text" name="name" placeholder="John Smith">
+                        <input type="text" name="company" placeholder="J & R Software Development">
+                        <input type="email" name="email" id="" placeholder="jsmith@jrdevgroup.com">
+                        <textarea name="message" id="" cols="15" rows="5" placeholder="..."></textarea>
+                        <input type="submit" value="Send" class="submitBtn">
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
-
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="inner">
-            <h2>Etiam veroeros lorem</h2>
-            <p>Thank you for taking the time to visit the site. Please click on my Linkedin or Github links to learn more</p>
-
-            <ul class="icons">
-
-                <li><a href="#" class="icon fa-github"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon fa-linkedin"><span class="label">Email</span></a></li>
-            </ul>
-            <p class="copyright">&copy; Edwin Rivera. </p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
+    <% include partial/footer.ejs %>
+   
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
-    <!-- <script src="assets/js/jquery.poptrox.min.js"></script> -->
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
         $('.submitBtn').click(function() {
             alert("Thank you for sending your details I will reach out to you as soon as i can.");
-            //  window.location.replace("/");
         });
     </script>
 
