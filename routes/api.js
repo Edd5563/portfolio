@@ -18,14 +18,11 @@ router.get('/contact', function (req, res) {
     res.render('contact')
 });
 
-router.post('/contact', function (req, res) {
-    //res.render('index')
-});
 
-
-router.post('/contact', urlencodedParser, function (req, res) {
-    console.log(req.body)
-    // res.redirect('index')
+router.post('/contact', urlencodedParser, function (req, res, next) {
+    Contacts.create(req.body).then(function(contact_saved){
+        res.redirect('/');
+    }).catch(next);
 });
 
 

@@ -40,15 +40,16 @@
 
     <div class="box">
         <div class="inner">
-            <h3>Nascetur nunc varius commodo</h3>
-            <p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+            <h3>Leave me a message</h3>
+            <p>Dont worry, I wont share any of your contact information with anyone.</p>
             <form method="POST" action="contact">
                 <input type="text" name="name" placeholder="John Smith">
                 <input type="text" name="company" placeholder="J & R Software Development">
                 <input type="email" name="email" id="" placeholder="jsmith@jrdevgroup.com">
                 <textarea name="message" id="" cols="15" rows="5" placeholder="..."></textarea>
+                <input type="submit" value="Send" class="submitBtn">
             </form>
-            <input type="submit" value="Send" class="submitBtn">
+            
             
         </div>
     </div>
@@ -61,10 +62,7 @@
     <footer id="footer">
         <div class="inner">
             <h2>Etiam veroeros lorem</h2>
-            <p>Pellentesque eleifend malesuada efficitur. Curabitur volutpat dui mi, ac imperdiet dolor tincidunt nec.
-                Ut erat lectus, dictum sit amet lectus a, aliquet rutrum mauris. Etiam nec lectus hendrerit, consectetur
-                risus viverra, iaculis orci. Phasellus eu nibh ut mi luctus auctor. Donec sit amet dolor in diam feugiat
-                venenatis. </p>
+            <p>Thank you for taking the time to visit the site. Please click on my Linkedin or Github links to learn more</p>
 
             <ul class="icons">
 
@@ -84,8 +82,8 @@
     <script src="assets/js/main.js"></script>
     <script>
         $('.submitBtn').click(function() {
-            // alert("Thank you for sending your details I will reach out to you as soon as i can.");
-            // window.location.replace("/");
+            alert("Thank you for sending your details I will reach out to you as soon as i can.");
+            //  window.location.replace("/");
         });
     </script>
 
